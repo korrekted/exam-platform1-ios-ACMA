@@ -391,6 +391,7 @@
 
 /* Begin PBXFileReference section */
 		7A40832902B43DEBC0F28B45 /* Pods-ACMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACMA.debug.xcconfig"; path = "Target Support Files/Pods-ACMA/Pods-ACMA.debug.xcconfig"; sourceTree = "<group>"; };
+		B897AC172873550E00409B7B /* StatsWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsWidgetsExtension.entitlements; sourceTree = "<group>"; };
 		DE60B31228732CD500C3AD11 /* ACMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE60B31E28732CD700C3AD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE60B32328732CD700C3AD11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -793,6 +794,7 @@
 		DE60B30928732CD500C3AD11 = {
 			isa = PBXGroup;
 			children = (
+				B897AC172873550E00409B7B /* StatsWidgetsExtension.entitlements */,
 				DE60B31428732CD500C3AD11 /* ACMA */,
 				DE60B64128732DFF00C3AD11 /* StatsWidgets */,
 				DE60B31328732CD500C3AD11 /* Products */,
@@ -2964,9 +2966,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ACMA/ACMA.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M73NH26C3Q;
+				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ACMA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2980,8 +2983,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.ACMA;
+				PRODUCT_BUNDLE_IDENTIFIER = exam.acma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ACMA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ACMA/Resource/ACMA-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -2997,9 +3001,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ACMA/ACMA.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M73NH26C3Q;
+				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ACMA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -3013,8 +3018,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.ACMA;
+				PRODUCT_BUNDLE_IDENTIFIER = exam.acma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ACMA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ACMA/Resource/ACMA-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -3027,9 +3033,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M73NH26C3Q;
+				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StatsWidgets;
@@ -3041,8 +3049,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.ACMA.StatsWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = exam.acma.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "ACMA Widget";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -3055,9 +3064,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M73NH26C3Q;
+				DEVELOPMENT_TEAM = ZY9AXRCYBM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StatsWidgets;
@@ -3069,8 +3080,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.ACMA.StatsWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = exam.acma.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "ACMA Widget";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
